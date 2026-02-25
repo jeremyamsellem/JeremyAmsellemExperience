@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 200 10% 6%;
+    --foreground: 40 10% 90%;
+
+    --card: 200 8% 10%;
+    --card-foreground: 40 10% 90%;
+
+    --popover: 200 8% 10%;
+    --popover-foreground: 40 10% 90%;
+
+    --primary: 155 25% 45%;
+    --primary-foreground: 200 10% 6%;
+
+    --secondary: 200 6% 14%;
+    --secondary-foreground: 40 10% 75%;
+
+    --muted: 200 6% 14%;
+    --muted-foreground: 40 5% 55%;
+
+    --accent: 155 25% 45%;
+    --accent-foreground: 200 10% 6%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 40 10% 90%;
+
+    --border: 200 6% 18%;
+    --input: 200 6% 18%;
+    --ring: 155 25% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --strong: 155 30% 40%;
+    --strong-foreground: 155 40% 85%;
+    --moderate: 40 5% 55%;
+    --moderate-foreground: 40 10% 85%;
+    --gap: 40 40% 40%;
+    --gap-foreground: 40 50% 75%;
+
+    --sidebar-background: 200 10% 6%;
+    --sidebar-foreground: 40 10% 90%;
+    --sidebar-primary: 155 25% 45%;
+    --sidebar-primary-foreground: 200 10% 6%;
+    --sidebar-accent: 200 6% 14%;
+    --sidebar-accent-foreground: 40 10% 90%;
+    --sidebar-border: 200 6% 18%;
+    --sidebar-ring: 155 25% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-mono-label {
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+}
