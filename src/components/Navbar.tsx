@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { MessageSquare } from "lucide-react";
+import { Download } from "lucide-react";
 
 const navItems = [
   { label: "Experience", href: "#experience" },
@@ -21,6 +20,14 @@ const Navbar = ({ onOpenChat }: { onOpenChat: () => void }) => {
               {item.label}
             </a>
           ))}
+          <a
+            href="/data/Jeremy Amsellem Resume 2026.pdf"
+            download
+            className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Download size={14} />
+            Resume
+          </a>
           <button
             onClick={onOpenChat}
             className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
